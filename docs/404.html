@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // This page can be served at any missing address, so anchor relative links to the site root.
+        // On the GitHub preview the site lives under /lyndahasseler.com/; on the real domain it lives at /.
+        (function () {
+            var base = document.createElement('base');
+            base.href = /\.github\.io$/.test(location.hostname) ? '/lyndahasseler.com/' : '/';
+            document.head.appendChild(base);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#41305f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,400&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <title>Page not found | Lynda Hasseler</title>
+</head>
+<body class="simple-page">
+    <main class="simple">
+        <p class="eyebrow">Page not found</p>
+        <h1 class="simple-title">This page has moved on</h1>
+        <p>The page you were looking for isn't here, but the music is.</p>
+        <p class="simple-sign">Lynda</p>
+        <a class="btn btn-primary" href="./">Go to the home page</a>
+    </main>
+</body>
+</html>
