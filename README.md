@@ -63,8 +63,11 @@ one TXT record. It stops anyone else from claiming the domain on GitHub if the r
 
 - **Words:** `docs/index.html`. **Styles:** `docs/styles.css`. Bump the `styles.css?v=` number when
   styles change.
-- **Photos:** `docs/assets/images`. Replace files using the same names. The collage photos are a
-  first pick from the 2024 Christmas Festival gallery.
+- **Photos:** `docs/assets/images`. Replace files using the same names. `lynda-hero` is the red-gown
+  photo, `lynda-portrait` is the headshot from the 2018 ACDA Michigan program, and the collage photos
+  are a first pick from the 2024 Christmas Festival gallery.
+- **Design:** ink, ivory, and garnet with Bodoni Moda, EB Garamond, and Jost, kept deliberately distinct
+  from the Chasing Beauty singer hub.
 - A push goes live in about a minute.
 
 ## Cost
