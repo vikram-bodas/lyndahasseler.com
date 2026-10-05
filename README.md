@@ -66,8 +66,10 @@ one TXT record. It stops anyone else from claiming the domain on GitHub if the r
 - **Photos:** `docs/assets/images`. Replace files using the same names. `lynda-hero` is the red-gown
   photo, `lynda-portrait` is the headshot from the 2018 ACDA Michigan program, and the collage photos
   are a first pick from the 2024 Christmas Festival gallery.
-- **Design:** ink, ivory, and garnet with Bodoni Moda, EB Garamond, and Jost, kept deliberately distinct
-  from the Chasing Beauty singer hub.
+- **Design:** Lynda's own palette, sampled from her photos: plum #41305f (the Chasing Beauty artwork),
+  ruby #b1041d (her gown), and violet #5b4fd8 (the stage lights). Fraunces headings, Source Serif 4 body
+  at 19px, Source Sans 3 labels. Readability first: dark text on light sections, no long italic passages.
+  It shares the plum with the singer hub but none of its gold, lavender cards, pill buttons, or fonts.
 - A push goes live in about a minute.
 
 ## Cost

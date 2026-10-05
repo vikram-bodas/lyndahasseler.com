@@ -22,13 +22,13 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <meta name="theme-color" content="#17141c">
+    <meta name="theme-color" content="#2b2042">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="assets/images/lynda-hero.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +41,7 @@
                 <a href="#highlights" class="nav-link">Highlights</a>
                 <a href="#teaching" class="nav-link">Teaching</a>
                 <a href="#tributes" class="nav-link">Tributes</a>
-                <a href="#stay-in-touch" class="btn btn-line">Stay in Touch</a>
+                <a href="#stay-in-touch" class="btn btn-ruby">Stay in touch</a>
             </nav>
         </div>
     </header>
@@ -50,13 +50,7 @@
 
         <!-- HERO -->
         <section id="top" class="hero">
-            <div class="hero-photo">
-                <picture>
-                    <source srcset="assets/images/lynda-hero.webp" type="image/webp">
-                    <img src="assets/images/lynda-hero.jpg" alt="Lynda Hasseler conducting in a red gown, with the choir singing behind her" width="1000" height="1200" fetchpriority="high">
-                </picture>
-            </div>
-            <div class="wrap hero-content">
+            <div class="wrap hero-grid">
                 <div class="hero-text">
                     <span class="label">Conductor · Singer · Teacher</span>
                     <h1 class="hero-name"><span class="first">Lynda</span> <span class="last">Hasseler</span></h1>
@@ -64,12 +58,17 @@
                     <p class="credential">Director of Choral Activities, Capital University, 1990–2026</p>
                     <p class="hero-lede">Thirty-five years of chasing beauty with the choirs of Capital University.</p>
                     <div class="hero-ctas">
-                        <a href="#biography" class="btn btn-solid">Her Story</a>
-                        <a href="#stay-in-touch" class="btn btn-line">Stay in Touch</a>
+                        <a href="#biography" class="btn btn-ruby">Her story</a>
+                        <a href="#stay-in-touch" class="btn btn-outline-light">Stay in touch</a>
                     </div>
                 </div>
+                <figure class="hero-frame">
+                    <picture>
+                        <source srcset="assets/images/lynda-hero.webp" type="image/webp">
+                        <img src="assets/images/lynda-hero.jpg" alt="Lynda Hasseler conducting in a red gown, with the choir singing behind her" width="1000" height="1200" fetchpriority="high">
+                    </picture>
+                </figure>
             </div>
-            <a class="scroll-cue" href="#overview" aria-label="Scroll to the overview">Scroll</a>
         </section>
 
         <!-- OVERVIEW -->
@@ -87,7 +86,7 @@
         </section>
 
         <!-- A NOTE FROM LYNDA -->
-        <section id="welcome" class="section paper-2">
+        <section id="welcome" class="section tint">
             <div class="wrap letter-grid">
                 <div>
                     <span class="label reveal">A Note from Lynda</span>
@@ -107,11 +106,13 @@
         <section id="biography" class="section">
             <div class="wrap bio-grid">
                 <figure class="bio-portrait reveal">
-                    <picture>
-                        <source srcset="assets/images/lynda-portrait.webp" type="image/webp">
-                        <img src="assets/images/lynda-portrait.jpg" alt="Portrait of Lynda R. Hasseler" width="600" height="600" loading="lazy">
-                    </picture>
-                    <figcaption><span>Lynda R. Hasseler, D.M.A.</span><span>Mezzo-soprano</span></figcaption>
+                    <div class="portrait-frame">
+                        <picture>
+                            <source srcset="assets/images/lynda-portrait.webp" type="image/webp">
+                            <img src="assets/images/lynda-portrait.jpg" alt="Portrait of Lynda R. Hasseler" width="600" height="600" loading="lazy">
+                        </picture>
+                    </div>
+                    <figcaption><strong>Lynda R. Hasseler, D.M.A.</strong><br>Conductor and mezzo-soprano</figcaption>
                 </figure>
                 <div class="bio-text">
                     <div class="chapter reveal"><span class="num">I</span><span class="line"></span><span class="label">Biography</span></div>
@@ -134,7 +135,7 @@
         </section>
 
         <!-- HIGHLIGHTS -->
-        <section id="highlights" class="section dark">
+        <section id="highlights" class="section purple">
             <div class="wrap">
                 <div class="chapter reveal"><span class="num">II</span><span class="line"></span><span class="label">Highlights</span></div>
                 <h2 class="title reveal">Selected <em>moments</em></h2>
@@ -198,7 +199,7 @@
         </section>
 
         <!-- TRIBUTES -->
-        <section id="tributes" class="section">
+        <section id="tributes" class="section tint">
             <div class="wrap">
                 <div class="chapter reveal"><span class="num">IV</span><span class="line"></span><span class="label">Tributes</span></div>
                 <h2 class="title reveal">In the words of <em>others</em></h2>
@@ -227,10 +228,10 @@
         </section>
 
         <!-- STILL TO COME -->
-        <section id="ahead" class="section paper-2">
+        <section id="ahead" class="section">
             <div class="wrap">
                 <span class="label reveal">Still to Come</span>
-                <h2 class="title reveal" style="margin-top: 22px;">This site is <em>just beginning</em></h2>
+                <h2 class="title reveal" style="margin-top: 14px;">This site is <em>just beginning</em></h2>
                 <div class="ahead-grid">
                     <div class="ahead-item reveal"><h3>The Archive</h3><p>Concert programs, recordings, and photographs from thirty-five years of the Chapel Choir, Choral Union, and Christmas Festival.</p></div>
                     <div class="ahead-item reveal"><h3>Teaching Materials</h3><p>Rehearsal techniques and writing on open-hearted singing, shared for conductors, teachers, and singers.</p></div>
@@ -240,7 +241,7 @@
         </section>
 
         <!-- STAY IN TOUCH -->
-        <section id="stay-in-touch" class="section dark">
+        <section id="stay-in-touch" class="section purple">
             <div class="wrap touch-grid">
                 <div class="touch-intro">
                     <div class="chapter reveal"><span class="num">V</span><span class="line"></span><span class="label">Stay in Touch</span></div>
@@ -249,7 +250,7 @@
                     <p class="privacy reveal">Your information is never shared.</p>
                 </div>
 
-                <div class="reveal">
+                <div class="form-card reveal">
                     <!-- Sends to a Google Form. To connect it, set the action to the form's formResponse URL
                          and each data-field input's name to its entry ID (see README). Until then the button reads "Form opens soon". -->
                     <form id="touch-form" method="POST" action="GOOGLE_FORM_RESPONSE_URL">
@@ -287,7 +288,7 @@
                             <label for="f-message">A note or a favorite memory <span class="opt">optional</span></label>
                             <textarea id="f-message" name="entry.MESSAGE" data-field="message" rows="4"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-solid btn-submit">Stay in Touch</button>
+                        <button type="submit" class="btn btn-ruby btn-submit">Stay in touch</button>
                         <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                     <div class="form-thanks" hidden tabindex="-1">
