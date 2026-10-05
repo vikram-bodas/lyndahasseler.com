@@ -66,8 +66,10 @@ one TXT record. It stops anyone else from claiming the domain on GitHub if the r
 - **Photos:** `docs/assets/images`. Replace files using the same names. `lynda-hero` is the red-gown
   photo, `lynda-portrait` is the headshot from the 2018 ACDA Michigan program, and the collage photos
   are a first pick from the 2024 Christmas Festival gallery.
-- **Design:** Lynda's own palette, sampled from her photos: plum #41305f (the Chasing Beauty artwork),
-  ruby #b1041d (her gown), and violet #5b4fd8 (the stage lights). Fraunces headings, Source Serif 4 body
+- **Design:** Lynda's own palette, sampled from her photos: plum #41305f (the Chasing Beauty artwork)
+  and violet #5b4fd8 (the stage lights), with a dusty rose accent #a8506d softened from her red gown.
+  The accent lives in the `--accent` tokens at the top of `styles.css`, so changing it is a one-line edit
+  (the share image and icons carry it too). Fraunces headings, Source Serif 4 body
   at 19px, Source Sans 3 labels. Readability first: dark text on light sections, no long italic passages.
   It shares the plum with the singer hub but none of its gold, lavender cards, pill buttons, or fonts.
 - A push goes live in about a minute.
