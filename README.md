@@ -5,8 +5,8 @@ under the vikram-bodas GitHub account. Vikram maintains it, with Claude making a
 
 ## Status
 
-- **Preview published** at https://vikram-bodas.github.io/lyndahasseler.com/ . `docs/index.html` carries a
-  noindex tag that keeps search engines off the draft. Remove it at launch.
+- **Live at https://www.lyndahasseler.com** since October 6, 2026. The bare domain and the old
+  vikram-bodas.github.io preview link both forward there. Search engines are allowed to index it.
 - **Stay-in-touch form not connected yet.** Until it is, the button reads "Form opens soon".
 
 ## 1. Create the Google Form (about 5 minutes)
@@ -34,9 +34,9 @@ Use a Google account that will stay around, Vikram's or Lynda's personal one.
 Public repo `vikram-bodas/lyndahasseler.com`. GitHub Pages publishes from `main` / `docs`, and every
 push to `main` goes live in about a minute.
 
-## 3. Launch on the domain (needs Lynda's GoDaddy login)
+## 3. The domain (done October 6, 2026; reference only)
 
-GoDaddy → lyndahasseler.com → **DNS**:
+GoDaddy → lyndahasseler.com → **DNS** now holds these records. Changing them needs Lynda's GoDaddy login.
 
 | Action | Type | Name | Value |
 |---|---|---|---|
@@ -50,11 +50,8 @@ GoDaddy → lyndahasseler.com → **DNS**:
 - If GoDaddy says the domain is connected to its Website Builder, disconnect that site first.
 - Leave everything else alone. The domain has no email records today.
 
-Then Claude adds `docs/CNAME` with `www.lyndahasseler.com`, removes the noindex tag, and turns on
-**Enforce HTTPS** once GitHub issues the certificate, which can take up to 24 hours. The bare domain then
-redirects to www automatically.
-
-Do this before the reception cards go out. The QR code opens https://www.lyndahasseler.com.
+`docs/CNAME` holds `www.lyndahasseler.com`, which tells GitHub Pages to serve the site there. Don't delete
+it. The bare domain redirects to www automatically, and the QR code opens https://www.lyndahasseler.com.
 
 Optional hardening: verify the domain in GitHub profile settings → Pages → **Add a domain**, which adds
 one TXT record. It stops anyone else from claiming the domain on GitHub if the repo is ever removed.
