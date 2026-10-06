@@ -26,9 +26,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="assets/images/lynda-hero.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
     <noscript><style>.site-header { background: rgba(41, 29, 63, .97); } .js .reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
@@ -36,8 +36,9 @@
 
     <header class="site-header" id="site-header">
         <div class="wrap header-inner">
-            <a class="wordmark" href="#top"><em>Lynda</em> R. Hasseler</a>
+            <a class="wordmark" href="#top">Lynda R. Hasseler</a>
             <nav class="nav" aria-label="Main">
+                <a href="#listen" class="nav-link">Listen</a>
                 <a href="#biography" class="nav-link">Biography</a>
                 <a href="#highlights" class="nav-link">Highlights</a>
                 <a href="#teaching" class="nav-link">Teaching</a>
@@ -59,8 +60,8 @@
                     <p class="credential">Director of Choral Activities, Capital University, 1990–2026</p>
                     <p class="hero-lede">Thirty-five years of chasing beauty with the choirs of Capital University.</p>
                     <div class="hero-ctas">
-                        <a href="#biography" class="btn btn-accent">Her story</a>
-                        <a href="#stay-in-touch" class="btn btn-outline-light">Stay in touch</a>
+                        <a href="#listen" class="btn btn-accent">Listen</a>
+                        <a href="#biography" class="btn btn-outline-light">Her story</a>
                     </div>
                 </div>
                 <figure class="hero-frame">
@@ -72,17 +73,89 @@
             </div>
         </section>
 
+        <!-- LISTEN: thumbnails come from YouTube, and a video loads only when someone presses play.
+             To swap a video, replace its ID (the part after v= in a YouTube link) everywhere it appears on that card. -->
+        <section id="listen" class="section tint">
+            <div class="wrap">
+                <div class="listen-head">
+                    <div>
+                        <span class="label reveal">Listen</span>
+                        <h2 class="title reveal" style="margin-top: 14px;">Let the music speak</h2>
+                    </div>
+                    <p class="reveal">The Capital University Chapel Choir and Choral Union under her direction, from the choir’s YouTube channel.</p>
+                </div>
+
+                <figure class="video video-feature reveal">
+                    <a class="video-frame" href="https://www.youtube.com/watch?v=zPDRBFOUO78" data-video="zPDRBFOUO78" target="_blank" rel="noopener" aria-label="Play Dark Matters, 7:59">
+                        <img src="https://i.ytimg.com/vi/zPDRBFOUO78/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">7:59</span>
+                    </a>
+                    <figcaption>
+                        <span class="label">Featured</span>
+                        <h3>Dark Matters</h3>
+                        <p>Music by Joel Thompson, poetry by Samiya Bashir. The premiere of the work her choirs commissioned, in Mees Hall, 2023.</p>
+                    </figcaption>
+                </figure>
+
+                <div class="videos">
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=oAkHLANeL-w" data-video="oAkHLANeL-w" target="_blank" rel="noopener" aria-label="Play All of Us, 6:37">
+                            <img src="https://i.ytimg.com/vi/oAkHLANeL-w/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">6:37</span>
+                        </a>
+                        <figcaption><h3>All of Us</h3><p>Craig Hella Johnson · ACDA Central/North Central Conference, 2018</p></figcaption>
+                    </figure>
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=2ydXEygAgJM" data-video="2ydXEygAgJM" target="_blank" rel="noopener" aria-label="Play Hold Fast to Dreams, 6:21">
+                            <img src="https://i.ytimg.com/vi/2ydXEygAgJM/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">6:21</span>
+                        </a>
+                        <figcaption><h3>Hold Fast to Dreams</h3><p>Joel Thompson · With program notes from Lynda, 2021</p></figcaption>
+                    </figure>
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=bbIriIPmouQ" data-video="bbIriIPmouQ" target="_blank" rel="noopener" aria-label="Play O Love, 4:46">
+                            <img src="https://i.ytimg.com/vi/bbIriIPmouQ/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">4:46</span>
+                        </a>
+                        <figcaption><h3>O Love</h3><p>Elaine Hagenberg · Christmas Festival 2020</p></figcaption>
+                    </figure>
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=Seki7kMpeZY" data-video="Seki7kMpeZY" target="_blank" rel="noopener" aria-label="Play Keep Your Lamps, 4:48">
+                            <img src="https://i.ytimg.com/vi/Seki7kMpeZY/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">4:48</span>
+                        </a>
+                        <figcaption><h3>Keep Your Lamps</h3><p>Arranged by André J. Thomas · Christmas Festival 2015</p></figcaption>
+                    </figure>
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=4eZVTifruFM" data-video="4eZVTifruFM" target="_blank" rel="noopener" aria-label="Play Full of Wonder, 1:05:39">
+                            <img src="https://i.ytimg.com/vi/4eZVTifruFM/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">1:05:39</span>
+                        </a>
+                        <figcaption><h3>Full of Wonder</h3><p>The full concert at the Sagrada Família, Barcelona, 2023</p></figcaption>
+                    </figure>
+                    <figure class="video reveal">
+                        <a class="video-frame" href="https://www.youtube.com/watch?v=zFOtORHUrwE" data-video="zFOtORHUrwE" target="_blank" rel="noopener" aria-label="Play Buscar y Cantar, 18:57">
+                            <img src="https://i.ytimg.com/vi/zFOtORHUrwE/sddefault.jpg" alt="" width="640" height="480" loading="lazy">
+                            <span class="video-play" aria-hidden="true"></span><span class="video-time" aria-hidden="true">18:57</span>
+                        </a>
+                        <figcaption><h3>Buscar y Cantar</h3><p>The Chapel Choir’s tour of Chile and Argentina, 2026</p></figcaption>
+                    </figure>
+                </div>
+                <p class="channel reveal"><a href="https://www.youtube.com/@capitaluniversitychapelcho9470" target="_blank" rel="noopener">More performances on the Chapel Choir’s YouTube channel<span class="sr-only"> (opens in a new tab)</span></a></p>
+            </div>
+        </section>
+
         <!-- OVERVIEW -->
         <section id="overview" class="section">
             <div class="wrap">
                 <span class="label reveal">A Life in Choral Music</span>
-                <p class="lede reveal">For thirty-five years, Lynda Hasseler led the choirs of Capital University, shaping a Chapel Choir heard at <em>national conferences</em>, on <em>international stages</em>, and before a full Mees Hall every Christmas.</p>
+                <p class="lede reveal">For thirty-five years, Lynda Hasseler led the choirs of Capital University, shaping a Chapel Choir heard at national conferences, on international stages, and before a full Mees Hall every Christmas.</p>
                 <div class="facts">
                     <div class="fact reveal"><p class="big">35</p><p class="cap">Years leading Capital’s choirs</p></div>
-                    <div class="fact reveal"><p class="big"><em>First</em></p><p class="cap">Woman to head a choral program at a Lutheran college or university</p></div>
+                    <div class="fact reveal"><p class="big">First</p><p class="cap">Woman to head a choral program at a Lutheran college or university</p></div>
                     <div class="fact reveal"><p class="big">Two golds</p><p class="cap">World Choir Games, Cincinnati, 2012</p></div>
                     <div class="fact reveal"><p class="big">Grammy</p><p class="cap">Best Choral Performance, shared with the Oregon Bach Festival Chorus</p></div>
-                    <div class="fact reveal"><p class="big"><em>Carnegie Hall</em></p><p class="cap">Conducting debut, 2016</p></div>
+                    <div class="fact reveal"><p class="big">Carnegie Hall</p><p class="cap">Conducting debut, 2016</p></div>
                     <div class="fact reveal"><p class="big">American Prize</p><p class="cap">Ernst Bacon Memorial Award, 2017–18</p></div>
                 </div>
             </div>
@@ -119,7 +192,7 @@
                 </figure>
                 <div class="bio-text">
                     <div class="chapter reveal"><span class="num">I</span><span class="line"></span><span class="label">Biography</span></div>
-                    <h2 class="title reveal">A conductor who makes choirs <em>tell a story</em></h2>
+                    <h2 class="title reveal">A conductor who makes choirs tell a story</h2>
 
                     <p class="dropcap">Lynda R. Hasseler, D.M.A., served as Professor of Music and Director of Choral Activities in the Conservatory of Music at Capital University in Columbus, Ohio, from 1990 until her retirement in 2026. When she took the helm of the Chapel Choir in 1990, she became the first woman to head a choral program at a Lutheran college or university.</p>
                     <p>A native of Platte, South Dakota, she graduated from Calvin College in Grand Rapids, Michigan, and earned her Master of Music and Doctor of Musical Arts degrees in conducting from Michigan State University.</p>
@@ -128,15 +201,15 @@
                     <h3 class="sub">The Chapel Choir years</h3>
                     <p>She took the Chapel Choir across the United States and around the world: to Germany, Austria, and the Czech Republic for its 75th anniversary in 2003, then to France and Switzerland, South Africa, Ireland, Spain, the Netherlands and Belgium, and, on its first visit to South America, Chile and Argentina. Her choirs sang for ACDA Central Division conferences in 2002, 2010, 2014, and 2018, the ACDA National Conference in 2019, and the Ohio Music Education Association.</p>
                     <p>In 2012 the Chapel Choir entered its first competition of any kind, the World Choir Games in Cincinnati, and won gold medals in both the Mixed Choirs and Musica Sacra categories of the Champions Competition. It finished second in the world among mixed choirs, with the highest composite score of any American choir. In 2016 it gave its solo debut on the Carnegie Hall stage.</p>
-                    <p>She championed new music. With the Chapel Choir, the Choral Union, and composer Jake Runestad, she shares the 2017–18 American Prize, Ernst Bacon Memorial Award for the Performance of American Music. In 2019 she led the premiere of Runestad’s <cite>A Silence Haunts Me</cite>, ACDA’s Brock Commission, at the American Choral Directors Association National Conference in Kansas City. A project she began in 2020 led to the commissioning of <cite>Dark Matters</cite> by composer Joel Thompson and poet Samiya Bashir, which her choirs premiered in Mees Hall in April 2023. In 2017 she launched Capital’s Young Choral Artists Festival, with Runestad as its first composer-in-residence.</p>
-                    <p>Her programming drew on classic and contemporary a cappella literature, sacred and secular, chosen from a global perspective. Her choirs became known for diverse repertoire, thoughtful staging, and a range of tone colors suited to each style, and her narrative, theme-based concerts were built to tell a story. Her final season closed with <cite>Buscar y Cantar</cite>, a farewell tour to Chile and Argentina in June 2026.</p>
+                    <p>She championed new music. With the Chapel Choir, the Choral Union, and composer Jake Runestad, she shares the 2017–18 American Prize, Ernst Bacon Memorial Award for the Performance of American Music. In 2019 she led the premiere of Runestad’s “<cite>A Silence Haunts Me</cite>,” ACDA’s Brock Commission, at the American Choral Directors Association National Conference in Kansas City. A project she began in 2020 led to the commissioning of “<cite>Dark Matters</cite>” by composer Joel Thompson and poet Samiya Bashir, which her choirs premiered in Mees Hall in April 2023. In 2017 she launched Capital’s Young Choral Artists Festival, with Runestad as its first composer-in-residence.</p>
+                    <p>Her programming drew on classic and contemporary a cappella literature, sacred and secular, chosen from a global perspective. Her choirs became known for diverse repertoire, thoughtful staging, and a range of tone colors suited to each style, and her narrative, theme-based concerts were built to tell a story. Her final season closed with “<cite>Buscar y Cantar</cite>,” a farewell tour to Chile and Argentina in June 2026.</p>
 
                     <h3 class="sub">On the podium</h3>
-                    <p>Dr. Hasseler travels widely as a clinician, guest conductor, and presenter. She made her Carnegie Hall conducting debut on Leap Day, February 29, 2016, in Leonard Bernstein’s <cite>Chichester Psalms</cite> and Ēriks Ešenvalds’ <cite>Trinity Te Deum</cite>, and returned to conduct festival choruses there in 2024. She has led All-State choirs in South Dakota, Michigan, and Colorado, headlined the ACDA Michigan and Pennsylvania conferences, guest-conducted a Festival of Choirs in Muscat, Oman, and served on international juries, including the 14th Concorso Corale Internazionale in Riva del Garda, Italy, and Sing Berlin! in 2018.</p>
-                    <p>She has served on the Music for All National Artistic Advisory Committee and as president of the South Central Region of Ohio ACDA. With composer Craig Courtney, she has served as co-editor of the Capital University Choral Series, published by Beckenhorst Press, which includes her arrangement of <cite>Come to the Water</cite> and their joint arrangement of <cite>I Will Rise</cite>.</p>
+                    <p>Dr. Hasseler travels widely as a clinician, guest conductor, and presenter. She made her Carnegie Hall conducting debut on Leap Day, February 29, 2016, in Leonard Bernstein’s “<cite>Chichester Psalms</cite>” and Ēriks Ešenvalds’ “<cite>Trinity Te Deum</cite>,” and returned to conduct festival choruses there in 2024. She has led All-State choirs in South Dakota, Michigan, and Colorado, headlined the ACDA Michigan and Pennsylvania conferences, guest-conducted a Festival of Choirs in Muscat, Oman, and served on international juries, including the 14th Concorso Corale Internazionale in Riva del Garda, Italy, and Sing Berlin! in 2018.</p>
+                    <p>She has served on the Music for All National Artistic Advisory Committee and as president of the South Central Region of Ohio ACDA. With composer Craig Courtney, she has served as co-editor of the Capital University Choral Series, published by Beckenhorst Press, which includes her arrangement of “<cite>Come to the Water</cite>” and their joint arrangement of “<cite>I Will Rise</cite>.”</p>
 
                     <h3 class="sub">As a singer</h3>
-                    <p>A mezzo-soprano, she has performed, toured, and recorded with the Robert Shaw Festival Chorus and the Oregon Bach Festival Chorus, singing in Carnegie Hall with both. She toured France with the Shaw Festival Chorus, appearing as a soloist, and toured internationally with the Oregon Bach Festival Choir, performing in Kraków and Warsaw, Santiago de Compostela, and Frankfurt and Stuttgart. She shares in the Grammy Award for Best Choral Performance won by the Oregon Bach Festival Chorus and Orchestra under Helmuth Rilling for Krzysztof Penderecki’s <cite>Credo</cite>, presented at the 43rd Grammy Awards in 2001. At home in Columbus she also sang with the Cantari Singers and Vocal Colour.</p>
+                    <p>A mezzo-soprano, she has performed, toured, and recorded with the Robert Shaw Festival Chorus and the Oregon Bach Festival Chorus, singing in Carnegie Hall with both. She toured France with the Shaw Festival Chorus, appearing as a soloist, and toured internationally with the Oregon Bach Festival Choir, performing in Kraków and Warsaw, Santiago de Compostela, and Frankfurt and Stuttgart. She shares in the Grammy Award for Best Choral Performance won by the Oregon Bach Festival Chorus and Orchestra under Helmuth Rilling for Krzysztof Penderecki’s “<cite>Credo</cite>,” presented at the 43rd Grammy Awards in 2001. At home in Columbus she also sang with the Cantari Singers and Vocal Colour.</p>
 
                     <h3 class="sub">Beyond the music</h3>
                     <p>A firm believer in the power of choral singing to open minds, soften hearts, and transform lives, she will tell you that an engaged rehearsal, an expressive phrase, and beautiful choral tone shaped with the “best students in the world” are among life’s most meaningful moments. Only one thing tops them all: being mom to Hannah, the “best daughter in the whole world.”</p>
@@ -148,10 +221,10 @@
         <section id="highlights" class="section purple">
             <div class="wrap">
                 <div class="chapter reveal"><span class="num">II</span><span class="line"></span><span class="label">Highlights</span></div>
-                <h2 class="title reveal">Selected <em>moments</em></h2>
+                <h2 class="title reveal">Selected moments</h2>
                 <ol class="timeline">
                     <li class="reveal"><span class="year">1990</span><p>Takes the helm of the Capital University Chapel Choir, founded in 1928, as the first woman to head a choral program at a Lutheran college or university.</p></li>
-                    <li class="reveal"><span class="year">2001</span><p>Shares in the Grammy Award for Best Choral Performance, presented at the 43rd Grammy Awards to the Oregon Bach Festival Chorus and Orchestra for Penderecki’s <cite>Credo</cite>. The same year she conducts the South Dakota All-State Chorus in her home state.</p></li>
+                    <li class="reveal"><span class="year">2001</span><p>Shares in the Grammy Award for Best Choral Performance, presented at the 43rd Grammy Awards to the Oregon Bach Festival Chorus and Orchestra for Penderecki’s “<cite>Credo</cite>.” The same year she conducts the South Dakota All-State Chorus in her home state.</p></li>
                     <li class="reveal"><span class="year">2003</span><p>Leads the Chapel Choir’s 75th-anniversary tour to Germany, Austria, and the Czech Republic, singing in Leipzig’s Thomaskirche and Wittenberg’s Castle Church.</p></li>
                     <li class="reveal"><span class="year">2011</span><p>Tours South Africa with the Chapel Choir, sharing a concert with the Stellenbosch University Choir.</p></li>
                     <li class="reveal"><span class="year">2012</span><p>In its first competition of any kind, the World Choir Games in Cincinnati, the Chapel Choir wins two gold medals in the Champions Competition, places second in the world among mixed choirs, and posts the highest composite score of any American choir.</p></li>
@@ -159,10 +232,10 @@
                     <li class="reveal"><span class="year">2016</span><p>Makes her Carnegie Hall conducting debut on Leap Day, the same season the Chapel Choir gives its solo debut on the Carnegie Hall stage.</p></li>
                     <li class="reveal"><span class="year">2017</span><p>Launches Capital’s Young Choral Artists Festival, with Jake Runestad as composer-in-residence.</p></li>
                     <li class="reveal"><span class="year">2018</span><p>Wins the American Prize, Ernst Bacon Memorial Award, with the Chapel Choir, Choral Union, and Runestad, and headlines the ACDA Michigan Fall Conference.</p></li>
-                    <li class="reveal"><span class="year">2019</span><p>Premieres Runestad’s <cite>A Silence Haunts Me</cite>, ACDA’s Brock Commission, at the national conference in Kansas City. Shares the podium with Eric Whitacre to celebrate a century of music at Capital, and tours the Netherlands and Belgium.</p></li>
-                    <li class="reveal"><span class="year">2020</span><p>Returns to Carnegie Hall for the New York debut of <cite>A Silence Haunts Me</cite>, and conducts a 280-voice festival chorus and orchestra in Vaughan Williams’ <cite>Dona Nobis Pacem</cite>.</p></li>
-                    <li class="reveal"><span class="year">2023</span><p>Leads the premiere of <cite>Dark Matters</cite> by Joel Thompson and Samiya Bashir, a commission her own initiative set in motion, and takes the Chapel Choir to Spain, singing in Barcelona’s Sagrada Família.</p></li>
-                    <li class="reveal"><span class="year">2026</span><p>Prepares the choir that sings with Andrea Bocelli to open his <cite>Romanza</cite> anniversary tour in Columbus, leads the Chapel Choir’s first tour of South America, and retires after thirty-five years. Alumni return to Mees Hall at Homecoming to sing in her honor.</p></li>
+                    <li class="reveal"><span class="year">2019</span><p>Premieres Runestad’s “<cite>A Silence Haunts Me</cite>,” ACDA’s Brock Commission, at the national conference in Kansas City. Shares the podium with Eric Whitacre to celebrate a century of music at Capital, and tours the Netherlands and Belgium.</p></li>
+                    <li class="reveal"><span class="year">2020</span><p>Returns to Carnegie Hall for the New York debut of “<cite>A Silence Haunts Me</cite>,” and conducts a 280-voice festival chorus and orchestra in Vaughan Williams’ “<cite>Dona Nobis Pacem</cite>.”</p></li>
+                    <li class="reveal"><span class="year">2023</span><p>Leads the premiere of “<cite>Dark Matters</cite>” by Joel Thompson and Samiya Bashir, a commission her own initiative set in motion, and takes the Chapel Choir to Spain, singing in Barcelona’s Sagrada Família.</p></li>
+                    <li class="reveal"><span class="year">2026</span><p>Prepares the choir that sings with Andrea Bocelli to open his “<cite>Romanza</cite>” anniversary tour in Columbus, leads the Chapel Choir’s first tour of South America, and retires after thirty-five years. Alumni return to Mees Hall at Homecoming to sing in her honor.</p></li>
                 </ol>
 
                 <div class="recordings reveal">
@@ -185,7 +258,7 @@
                 <div class="teaching-head">
                     <div>
                         <div class="chapter reveal"><span class="num">III</span><span class="line"></span><span class="label">Teaching</span></div>
-                        <h2 class="title reveal">In the <em>rehearsal room</em></h2>
+                        <h2 class="title reveal">In the rehearsal room</h2>
                     </div>
                     <p class="reveal">Dr. Hasseler built a culture of disciplined preparation, ensemble integrity, and meaningful storytelling through music. Her approach is rooted in a deep connection to text, sound, and expression, and it asks singers to bring their whole hearts to the work.</p>
                 </div>
@@ -255,7 +328,7 @@
         <section id="tributes" class="section tint">
             <div class="wrap">
                 <div class="chapter reveal"><span class="num">IV</span><span class="line"></span><span class="label">Tributes</span></div>
-                <h2 class="title reveal">In the words of <em>others</em></h2>
+                <h2 class="title reveal">In the words of others</h2>
                 <div class="tributes">
                     <figure class="tribute reveal">
                         <div class="tribute-mark" aria-hidden="true">“</div>
@@ -327,7 +400,7 @@
         <section id="ahead" class="section">
             <div class="wrap">
                 <span class="label reveal">Still to Come</span>
-                <h2 class="title reveal" style="margin-top: 14px;">This site is <em>just beginning</em></h2>
+                <h2 class="title reveal" style="margin-top: 14px;">This site is just beginning</h2>
                 <div class="ahead-grid">
                     <div class="ahead-item reveal"><h3>The Archive</h3><p>Concert programs, recordings, and photographs from thirty-five years of the Chapel Choir, Choral Union, and Christmas Festival.</p></div>
                     <div class="ahead-item reveal"><h3>Teaching Materials</h3><p>Rehearsal techniques and writing on open-hearted singing, shared for conductors, teachers, and singers.</p></div>
@@ -341,7 +414,7 @@
             <div class="wrap touch-grid">
                 <div class="touch-intro">
                     <div class="chapter reveal"><span class="num">V</span><span class="line"></span><span class="label">Stay in Touch</span></div>
-                    <h2 class="title reveal">I’d love to <em>hear from you</em></h2>
+                    <h2 class="title reveal">I’d love to hear from you</h2>
                     <p class="reveal">Leave your name and email and I’ll let you know as new things are added here. If you’d like, share a note or a favorite memory, too.</p>
                     <p class="privacy reveal">Your information is never shared.</p>
                 </div>
@@ -399,7 +472,7 @@
 
     <footer class="site-footer">
         <div class="wrap footer-inner">
-            <p class="footer-name"><em>Lynda</em> R. Hasseler, D.M.A.</p>
+            <p class="footer-name">Lynda R. Hasseler, D.M.A.</p>
             <p class="footer-meta">Conductor · Singer · Teacher<br>Columbus, Ohio</p>
             <p class="footer-small">© 2026 Lynda R. Hasseler</p>
         </div>
@@ -424,6 +497,27 @@
                 });
             }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
             items.forEach(function (el) { io.observe(el); });
+        })();
+
+        // Videos: show the thumbnail first and load YouTube only when someone presses play.
+        (function () {
+            document.querySelectorAll('.video-frame[data-video]').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;   // lets people open YouTube in a new tab
+                    event.preventDefault();
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'https://www.youtube-nocookie.com/embed/' + link.getAttribute('data-video') + '?autoplay=1&rel=0';
+                    iframe.title = link.getAttribute('aria-label').replace(/^Play /, '');
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    iframe.allowFullscreen = true;
+                    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                    var frame = document.createElement('div');
+                    frame.className = 'video-frame is-playing';
+                    frame.appendChild(iframe);
+                    link.parentNode.replaceChild(frame, link);
+                    iframe.focus();
+                });
+            });
         })();
 
         // Stay-in-touch form: posts to a Google Form in the background, then thanks the visitor in place.

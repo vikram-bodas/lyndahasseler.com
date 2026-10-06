@@ -67,11 +67,13 @@ one TXT record. It stops anyone else from claiming the domain on GitHub if the r
   photo, `lynda-portrait` is the headshot from the 2018 ACDA Michigan program, and the collage photos
   are a first pick from the 2024 Christmas Festival gallery.
 - **Design:** Lynda's own palette, sampled from her photos: plum #41305f (the Chasing Beauty artwork)
-  and violet #5b4fd8 (the stage lights), with a dusty rose accent #a8506d softened from her red gown.
-  The accent lives in the `--accent` tokens at the top of `styles.css`, so changing it is a one-line edit
-  (the share image and icons carry it too). Fraunces headings, Source Serif 4 body
-  at 19px, Source Sans 3 labels. Readability first: dark text on light sections, no long italic passages.
-  It shares the plum with the singer hub but none of its gold, lavender cards, pill buttons, or fonts.
+  and violet #5a45c2 (the stage lights). Ruby and then rose were both dropped as accent colors, so the
+  accent stays in her purples. Lynda isn't fond of mixing italic and upright type, so every heading and
+  quote is upright, and titles of works go in quotation marks, the way Capital writes them. The accent lives in the `--accent` tokens at the top of
+  `styles.css` (the share image and icons carry it too). Fraunces headings, Source Serif 4 body at 19px,
+  Source Sans 3 labels. It shares the plum with the singer hub but none of its gold, pill buttons, or fonts.
+- **Videos:** the Listen section embeds performances from the Chapel Choir's YouTube channel. Each card
+  holds a YouTube video ID; swap the ID to change the video. YouTube loads only when someone presses play.
 - A push goes live in about a minute.
 
 ## Cost
