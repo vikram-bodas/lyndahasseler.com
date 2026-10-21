@@ -7,7 +7,7 @@ under the vikram-bodas GitHub account. Vikram maintains it, with Claude making a
 
 - **Live at https://www.lyndahasseler.com** since October 6, 2026. The bare domain and the old
   vikram-bodas.github.io preview link both forward there. Search engines are allowed to index it.
-- **Stay-in-touch form not connected yet.** Until it is, the button reads "Form opens soon".
+- **Stay-in-touch form connected** on October 21, 2026, to the "Stay in Touch" Google Form: https://forms.gle/eNvcCsbsP8LfA15W9
 
 ## 1. Create the Google Form (about 5 minutes)
 
