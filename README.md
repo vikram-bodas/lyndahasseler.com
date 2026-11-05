@@ -76,3 +76,10 @@ one TXT record. It stops anyone else from claiming the domain on GitHub if the r
 ## Cost
 
 $0 a year. GitHub Pages and Google Forms are free. Lynda's only cost is her GoDaddy domain renewal.
+
+## Editing with ChatGPT (for Lynda)
+
+Lynda can edit the site by talking to ChatGPT's Codex agent, connected to this repository.
+Codex reads `AGENTS.md` for her style rules, makes the change, and opens a pull request.
+Merging the pull request publishes it. The "Site check" GitHub Action runs `scripts/check_site.py`
+on every pull request and flags broken HTML, italics, a changed domain file, or a disconnected form.
