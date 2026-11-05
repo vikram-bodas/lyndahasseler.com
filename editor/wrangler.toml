@@ -1,0 +1,13 @@
+name = "lynda-website-editor"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+REPO = "vikram-bodas/lyndahasseler.com"
+SITE_URL = "https://www.lyndahasseler.com/"
+
+# Secrets (set with `npx wrangler secret put NAME`, never in this file):
+#   ANTHROPIC_API_KEY  - Claude API key
+#   GITHUB_TOKEN       - fine-grained token with Contents read/write on this repo only
+#   EDIT_PASSWORD      - the password Lynda types

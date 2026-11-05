@@ -83,3 +83,12 @@ Lynda can edit the site by talking to ChatGPT's Codex agent, connected to this r
 Codex reads `AGENTS.md` for her style rules, makes the change, and opens a pull request.
 Merging the pull request publishes it. The "Site check" GitHub Action runs `scripts/check_site.py`
 on every pull request and flags broken HTML, italics, a changed domain file, or a disconnected form.
+
+## "Edit My Website" page (for Lynda)
+
+`editor/` is a Cloudflare Worker that serves Lynda's private editing page. She types a request in plain
+English; Claude (Opus 5.5) proposes exact text edits to `docs/index.html` using the rules in `AGENTS.md`;
+she previews and clicks Publish, which commits to `main`. Commits it makes start with "Website editor:",
+and its Undo button reverts the most recent one. Deploy with `cd editor && npm install && npx wrangler deploy`.
+Secrets (set with `npx wrangler secret put NAME`): `ANTHROPIC_API_KEY`, `GITHUB_TOKEN` (fine-grained,
+Contents read/write on this repo only), `EDIT_PASSWORD`.
