@@ -75,7 +75,7 @@ a{color:var(--violet);font-weight:700}
     <p id="answerStatus" class="status hidden"></p>
   </section>
 
-  <section class="card">
+  <section id="undoCard" class="card hidden">
     <h2>Change your mind?</h2>
     <p id="lastInfo" class="hint">Your most recent change from this page can be undone.</p>
     <div class="row"><button class="plain" id="undoBtn">Undo my last change</button></div>
@@ -98,7 +98,7 @@ async function api(path, data) {
 }
 function show(el, text, kind) { el.textContent = text; el.className = "status " + (kind || ""); el.classList.remove("hidden"); }
 function hide(el) { el.classList.add("hidden"); }
-function signOut() { try { localStorage.removeItem("lh-editor-pw"); } catch (e) {} $("login").classList.remove("hidden"); $("ask").classList.add("hidden"); }
+function signOut() { try { localStorage.removeItem("lh-editor-pw"); } catch (e) {} $("login").classList.remove("hidden"); $("ask").classList.add("hidden"); $("undoCard").classList.add("hidden"); }
 
 async function signIn() {
   password = $("pw").value.trim() || password;
@@ -107,7 +107,7 @@ async function signIn() {
   $("loginBtn").disabled = false;
   if (out.ok) {
     try { localStorage.setItem("lh-editor-pw", password); } catch (e) {}
-    hide($("login")); $("ask").classList.remove("hidden"); $("req").focus(); refreshLast();
+    hide($("login")); $("ask").classList.remove("hidden"); $("undoCard").classList.remove("hidden"); $("req").focus(); refreshLast();
   } else { show($("loginStatus"), out.error || "Please try again.", "bad"); }
 }
 $("loginBtn").onclick = signIn;
